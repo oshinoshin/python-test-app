@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  python:
+    image: python
+    build: ./phyton
+    container_name: python
+    tty: true
+    volumes:
+      - ./phyton/requirememts.txt .
+      - ../backend:/backend
+      - .:/workspace:cached
+    ports:
+      - 8888:8888

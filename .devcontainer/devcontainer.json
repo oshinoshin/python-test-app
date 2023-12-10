@@ -1,0 +1,13 @@
+{
+	"name": "python-container",
+	"service": "python",
+	"workspaceFolder": "/backend",
+	"dockerComposeFile": "../infrastructure/docker-compose.yml",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.vscode-pylance"
+			]
+		}
+	}
+}
